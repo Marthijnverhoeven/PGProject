@@ -36,16 +36,18 @@
         <title>Hello World</title>
     </head>
     <body>
+        <div data-role="page">
+            <h1 id="geo">Just a test!!!!!!!!!</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <!--<div>
+                <button onClick="doGeo()">Geobutton</button>
+            </div>-->
+        </div>
+        <!-- Required -->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        
-        <h1 id="geo">Just a test!!!!!!!!!</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-        <div>
-            <button onClick="doGeo()">Geobutton</button>
-        </div>
     </body>
 </html>
