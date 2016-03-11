@@ -68,5 +68,3 @@ var app = {
 
 //     document.getElementById("geo").innerHTML = HTML;
 // };
-
-app.initialize();
