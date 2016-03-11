@@ -48,4 +48,25 @@ var app = {
     }
 };
 
+function doGeo()
+{
+    navigator.geolocation.getCurrentPosition(onSuccess, onFailure);
+}
+
+function onSuccess(position) {
+    console.log(position.coords.accuracy);
+    var HTML = position.coords.accuracy;
+
+    document.getElementById("geo").innerHTML = HTML;
+
+};
+
+function onFailure(error) {
+    console.log(error.message);
+
+    var HTML = error.message;
+
+    document.getElementById("geo").innerHTML = HTML;
+};
+
 app.initialize();
